@@ -15,7 +15,7 @@ public class SubQuickBuy extends AbstractCommand {
 
     public SubQuickBuy() {
         this.id = "quickbuy";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.requiredArgLength = new Integer[]{3, 4};
         this.requiredConsoleArgLength = new Integer[]{4, 5};

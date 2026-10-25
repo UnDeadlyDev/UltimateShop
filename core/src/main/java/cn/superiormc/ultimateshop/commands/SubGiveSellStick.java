@@ -14,7 +14,7 @@ public class SubGiveSellStick extends AbstractCommand {
 
     public SubGiveSellStick() {
         this.id = "givesellstick";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.requiredArgLength = new Integer[]{2, 3, 4};
         this.requiredConsoleArgLength = new Integer[]{3, 4};

@@ -15,7 +15,7 @@ public class SubGiveSellChest extends AbstractCommand {
 
     public SubGiveSellChest() {
         this.id = "givesellchest";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.requiredArgLength = new Integer[]{2, 3, 4};
         this.requiredConsoleArgLength = new Integer[]{3, 4};

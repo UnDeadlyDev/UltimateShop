@@ -14,7 +14,7 @@ public class SubEditor extends AbstractCommand {
 
     public SubEditor() {
         this.id = "editor";
-        this.requiredPermission = "ultimateshop." + id;
+        this.requiredPermission = "ueliteshop." + id;
         this.onlyInGame = true;
         this.requiredArgLength = new Integer[]{1, 3};
         this.premiumOnly = true;

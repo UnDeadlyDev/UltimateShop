@@ -1,7 +1,6 @@
 package cn.superiormc.ultimateshop.managers;
 
 import cn.superiormc.ultimateshop.UltimateShop;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuGUI;
 import cn.superiormc.ultimateshop.objects.ObjectSellStick;
 import cn.superiormc.ultimateshop.objects.ObjectSharedUseTimes;
 import cn.superiormc.ultimateshop.objects.ObjectShop;
@@ -434,7 +433,7 @@ public class ConfigManager extends AbstractManager {
             return null;
         }
         var gui = MenuStatusManager.menuStatusManager.getOpeningGUI(player);
-        if (!(gui instanceof ArcMenuGUI) || gui.getMenu() == null) {
+        if (gui.getMenu() == null) {
             return null;
         }
         return gui.getMenu().getString("ui.renderers.arcmenu.right-click-action",

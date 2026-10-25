@@ -2,7 +2,6 @@ package cn.superiormc.ultimateshop.gui.inv;
 
 import cn.superiormc.ultimateshop.UltimateShop;
 import cn.superiormc.ultimateshop.gui.InvGUI;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuBridge;
 import cn.superiormc.ultimateshop.gui.dialog.DialogCommonGUI;
 import cn.superiormc.ultimateshop.gui.dialog.DialogOreGUI;
 import cn.superiormc.ultimateshop.gui.form.FormCommonGUI;
@@ -103,10 +102,6 @@ public class CommonGUI extends InvGUI {
         if (UltimateShop.useGeyser && commonMenu.isUseGeyser() && CommonUtil.isBedrockPlayer(player)) {
             FormCommonGUI formCommonGUI = new FormCommonGUI(player, commonMenu, bypass);
             formCommonGUI.openGUI(reopen);
-            return;
-        }
-
-        if (ArcMenuBridge.arcMenuBridge.open(player, commonMenu, null, bypass, reopen)) {
             return;
         }
         if (commonMenu.isUseDialog()) {

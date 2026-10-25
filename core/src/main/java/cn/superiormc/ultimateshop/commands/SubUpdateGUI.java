@@ -10,7 +10,7 @@ public class SubUpdateGUI extends AbstractCommand {
 
     public SubUpdateGUI() {
         this.id = "updategui";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.requiredArgLength = new Integer[]{1, 2};
     }

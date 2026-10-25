@@ -265,9 +265,9 @@ public class TextUtil {
 
     public static String pluginPrefix() {
         if (!CommonUtil.getMajorVersion(16)) {
-            return "§a[UltimateShop]";
+            return "§a[UEliteShop]";
         }
-        return "§x§9§8§F§B§9§8[UltimateShop]";
+        return "§x§9§8§F§B§9§8[UEliteShop]";
     }
 
     public static String colorize(String input) {

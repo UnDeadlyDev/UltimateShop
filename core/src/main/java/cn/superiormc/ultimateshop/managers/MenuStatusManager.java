@@ -12,7 +12,6 @@ import cn.superiormc.ultimateshop.gui.DialogGUI;
 import cn.superiormc.ultimateshop.gui.FormGUI;
 import cn.superiormc.ultimateshop.gui.GUIStatus;
 import cn.superiormc.ultimateshop.gui.InvGUI;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuGUI;
 import cn.superiormc.ultimateshop.gui.Prompt;
 import cn.superiormc.ultimateshop.gui.PromptUtil;
 import cn.superiormc.ultimateshop.gui.inv.CommonGUI;
@@ -119,12 +118,6 @@ public class MenuStatusManager extends AbstractManager {
             return false;
         }
         GUIStatus guiStatus = getGUIStatus(player);
-        if (guiStatus != null && guiStatus.getGUI() instanceof ArcMenuGUI arcMenu
-            && !arcMenu.isActive()
-            && guiStatus.getStatus() != GUIStatus.Status.ALREADY_IN_COOLDOWN) {
-            removeGUIStatus(player);
-            guiStatus = null;
-        }
         if (!reopen && guiStatus != null && ConfigManager.configManager.getLong("menu.cooldown.reopen", -1L) > 0L) {
             return false;
         }
@@ -234,9 +227,6 @@ public class MenuStatusManager extends AbstractManager {
             return;
         }
         AbstractGUI opening = getOpeningGUI(player);
-        if (opening instanceof ArcMenuGUI) {
-            opening.closeGUI();
-        }
         player.closeInventory();
         clear(player);
     }
@@ -258,9 +248,6 @@ public class MenuStatusManager extends AbstractManager {
     public void startPrompt(Player player, Prompt prompt) {
         prompts.put(player.getUniqueId(), prompt);
         AbstractGUI opening = getOpeningGUI(player);
-        if (opening instanceof ArcMenuGUI) {
-            opening.closeGUI();
-        }
         player.closeInventory();
         EditorLang.send(player, "editor.prompt.description", "&f{value}", "value", prompt.getDescription());
         EditorLang.send(player, "editor.prompt.cancel-tip", "&7Type &f{value} &7to abort this edit.",

@@ -2,7 +2,6 @@ package cn.superiormc.ultimateshop.gui.inv;
 
 import cn.superiormc.ultimateshop.UltimateShop;
 import cn.superiormc.ultimateshop.gui.InvGUI;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuBridge;
 import cn.superiormc.ultimateshop.gui.dialog.DialogFavouriteGUI;
 import cn.superiormc.ultimateshop.gui.form.FormFavouriteGUI;
 import cn.superiormc.ultimateshop.managers.CacheManager;
@@ -220,9 +219,6 @@ public class FavouriteGUI extends InvGUI {
             new FormFavouriteGUI(player, menu, bypass).openGUI(reopen);
             return;
         }
-        if (ArcMenuBridge.arcMenuBridge.open(player, menu, null, bypass, reopen)) {
-            return;
-        }
         if (menu.isUseDialog()) {
             new DialogFavouriteGUI(player, menu, bypass).openGUI(reopen);
             return;
@@ -234,9 +230,6 @@ public class FavouriteGUI extends InvGUI {
     public static void openGUI(Player player, ObjectFavouriteMenu menu, boolean bypass, boolean reopen, boolean editing) {
         if (UltimateShop.useGeyser && menu.isUseGeyser() && CommonUtil.isBedrockPlayer(player)) {
             new FormFavouriteGUI(player, menu, bypass, editing).openGUI(reopen);
-            return;
-        }
-        if (ArcMenuBridge.arcMenuBridge.open(player, menu, null, bypass, reopen, editing)) {
             return;
         }
         if (menu.isUseDialog()) {

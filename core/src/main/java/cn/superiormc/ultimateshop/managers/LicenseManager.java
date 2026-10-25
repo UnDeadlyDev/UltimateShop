@@ -43,7 +43,6 @@ public final class LicenseManager extends AbstractManager {
 
         if (!UltimateShop.freeVersion) {
             detectSourceAndUser();
-            printStartupInfo();
         }
     }
 
@@ -178,18 +177,6 @@ public final class LicenseManager extends AbstractManager {
 
         } catch (Exception e) {
             return false;
-        }
-    }
-
-    private void printStartupInfo() {
-        TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " §cPREMIUM version found, checking your license...");
-        TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " §fDownload source: " + source.name());
-        if (!valid) {
-            TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " No license found in your jar file. Please redownload it if you believe this is mistake.");
-        } else if (username != null && !username.isEmpty()) {
-            TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " §fLicensed to: " + username);
-        } else if (source != DownloadSource.SELF_BUILD) {
-            TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " No license found in your jar file. Seems that you are self-building this plugin.");
         }
     }
 }

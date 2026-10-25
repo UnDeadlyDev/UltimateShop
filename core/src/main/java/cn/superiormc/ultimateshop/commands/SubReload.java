@@ -9,7 +9,7 @@ public class SubReload extends AbstractCommand {
 
     public SubReload() {
         this.id = "reload";
-        this.requiredPermission = "ultimateshop." + id;
+        this.requiredPermission = "ueliteshop." + id;
         this.onlyInGame = false;
         this.requiredArgLength = new Integer[]{1};
     }

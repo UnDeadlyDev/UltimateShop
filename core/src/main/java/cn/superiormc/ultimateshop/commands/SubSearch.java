@@ -10,7 +10,7 @@ public class SubSearch extends AbstractCommand {
 
     public SubSearch() {
         this.id = "search";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = true;
         this.requiredArgLength = new Integer[]{1};
     }

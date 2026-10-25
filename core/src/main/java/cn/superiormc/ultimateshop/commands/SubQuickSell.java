@@ -16,7 +16,7 @@ public class SubQuickSell extends AbstractCommand {
 
     public SubQuickSell() {
         this.id = "quicksell";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.requiredArgLength = new Integer[]{3, 4};
         this.requiredConsoleArgLength = new Integer[]{4, 5};

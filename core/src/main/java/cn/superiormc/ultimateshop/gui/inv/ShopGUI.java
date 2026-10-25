@@ -2,7 +2,6 @@ package cn.superiormc.ultimateshop.gui.inv;
 
 import cn.superiormc.ultimateshop.UltimateShop;
 import cn.superiormc.ultimateshop.gui.InvGUI;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuBridge;
 import cn.superiormc.ultimateshop.gui.dialog.DialogOreGUI;
 import cn.superiormc.ultimateshop.gui.dialog.DialogShopGUI;
 import cn.superiormc.ultimateshop.gui.form.FormShopGUI;
@@ -160,9 +159,6 @@ public class ShopGUI extends InvGUI {
             CommonUtil.isBedrockPlayer(player)) {
             FormShopGUI formShopGUI = new FormShopGUI(player, shop, shopMenu, bypass);
             formShopGUI.openGUI(reopen);
-            return;
-        }
-        if (ArcMenuBridge.arcMenuBridge.open(player, shopMenu, shop, bypass, reopen)) {
             return;
         }
         if (shopMenu.isUseDialog()) {

@@ -7,7 +7,7 @@ public class SubSellHand extends AbstractCommand {
 
     public SubSellHand() {
         this.id = "sellhand";
-        this.requiredPermission = "ultimateshop." + id;
+        this.requiredPermission = "ueliteshop." + id;
         this.onlyInGame = true;
         this.requiredArgLength = new Integer[]{1};
     }

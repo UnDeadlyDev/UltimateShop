@@ -1,7 +1,6 @@
 package cn.superiormc.ultimateshop;
 
 import cn.superiormc.ultimateshop.database.DatabaseExecutor;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuBridge;
 import cn.superiormc.ultimateshop.managers.AbstractManager;
 import cn.superiormc.ultimateshop.managers.ActionManager;
 import cn.superiormc.ultimateshop.managers.BungeeCordManager;
@@ -43,7 +42,7 @@ public final class UltimateShop extends JavaPlugin {
 
     private Metrics metrics;
 
-    public static final boolean freeVersion = true;
+    public static final boolean freeVersion = false;
 
     public static SpecialMethodUtil methodUtil;
 
@@ -112,7 +111,6 @@ public final class UltimateShop extends JavaPlugin {
         new CacheManager();
         new CommandManager();
         new MenuStatusManager();
-        new ArcMenuBridge();
         if (!UltimateShop.freeVersion && !UltimateShop.isFolia) {
             new SellChestManager();
         }
@@ -132,7 +130,7 @@ public final class UltimateShop extends JavaPlugin {
         AbstractManager.initializeManagers();
         metrics = new Metrics(UltimateShop.instance, 20783);
         TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " §fYour server version is: " + yearVersion + "." + majorVersion + "." + minorVersion + "!");
-        TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " §fPlugin is loaded. Author: PQguanfang.");
+        TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " §fPlugin is loaded. Author: UnDeadlyDev.");
     }
 
     @Override
@@ -163,6 +161,6 @@ public final class UltimateShop extends JavaPlugin {
             metrics.shutdown();
             metrics = null;
         }
-        TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " §fPlugin is disabled. Author: PQguanfang.");
+        TextUtil.sendMessage(null, TextUtil.pluginPrefix() + " §fPlugin is disabled. Author: UnDeadlyDev.");
     }
 }

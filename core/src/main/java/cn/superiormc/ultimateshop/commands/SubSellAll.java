@@ -7,7 +7,7 @@ public class SubSellAll extends AbstractCommand {
 
     public SubSellAll() {
         this.id = "sellall";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = true;
         this.requiredArgLength = new Integer[]{1};
     }

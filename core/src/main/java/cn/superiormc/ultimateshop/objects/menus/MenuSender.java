@@ -2,7 +2,6 @@ package cn.superiormc.ultimateshop.objects.menus;
 
 import cn.superiormc.ultimateshop.gui.DialogGUI;
 import cn.superiormc.ultimateshop.gui.FormGUI;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuGUI;
 import cn.superiormc.ultimateshop.gui.dialog.DialogView;
 import cn.superiormc.ultimateshop.managers.MenuStatusManager;
 import org.bukkit.entity.Player;
@@ -62,9 +61,6 @@ public class MenuSender {
         var gui = MenuStatusManager.menuStatusManager.getOpeningGUI(player);
         if (gui == null) {
             return null;
-        }
-        if (gui instanceof ArcMenuGUI) {
-            return "arcmenu";
         }
         if (gui instanceof FormGUI) {
             return "form";

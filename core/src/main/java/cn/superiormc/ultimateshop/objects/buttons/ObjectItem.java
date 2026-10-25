@@ -1,7 +1,6 @@
 package cn.superiormc.ultimateshop.objects.buttons;
 
 import cn.superiormc.ultimateshop.UltimateShop;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuBridge;
 import cn.superiormc.ultimateshop.gui.inv.BuyMoreGUI;
 import cn.superiormc.ultimateshop.gui.inv.CommonGUI;
 import cn.superiormc.ultimateshop.managers.ConfigManager;
@@ -553,9 +552,6 @@ public class ObjectItem extends AbstractButton {
             return;
             case "select-amount" :
             if (getBuyMore()) {
-                if (ArcMenuBridge.arcMenuBridge.openInfo(player, this)) {
-                    return;
-                }
                 BuyMoreGUI.openGUI(player, this);
             }
             return;

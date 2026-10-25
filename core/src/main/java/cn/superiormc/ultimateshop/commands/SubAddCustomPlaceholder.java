@@ -18,7 +18,7 @@ public class SubAddCustomPlaceholder extends AbstractCommand {
 
     public SubAddCustomPlaceholder() {
         this.id = "addcustomplaceholder";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.premiumOnly = true;
         this.requiredArgLength = new Integer[]{3};

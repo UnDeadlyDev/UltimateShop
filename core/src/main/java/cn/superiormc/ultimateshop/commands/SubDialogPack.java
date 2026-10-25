@@ -12,7 +12,7 @@ public class SubDialogPack extends AbstractCommand {
 
     public SubDialogPack() {
         this.id = "dialogpack";
-        this.requiredPermission = "ultimateshop." + id;
+        this.requiredPermission = "ueliteshop." + id;
         this.onlyInGame = false;
         this.premiumOnly = true;
         this.requiredArgLength = new Integer[] {

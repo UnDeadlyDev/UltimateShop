@@ -13,7 +13,7 @@ public class SubUpdateGUITitle extends AbstractCommand {
 
     public SubUpdateGUITitle() {
         this.id = "updateguititle";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.premiumOnly = true;
         this.requiredArgLength = new Integer[]{1, 2};

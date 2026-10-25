@@ -1,10 +1,10 @@
-name: UltimateShop
+name: UEliteShop
 version: '${revision}'
 main: cn.superiormc.ultimateshop.UltimateShop
 api-version: 1.14
 folia-supported: true
 authors:
-  - PQguanfang
+  - UnDeadlyDev
 softdepend:
   # Protection
   - WorldGuard
@@ -53,39 +53,39 @@ softdepend:
   - AdvancedEnchantments
   - MythicChanger
 commands:
-  ultimateshop:
+  ueliteshop:
     aliases:
       - "shop"
-    usage: "/ultimateshop"
-    description: "UltimateShop Main Command."
+    usage: "/ueliteshop"
+    description: "UEliteShop Main Command."
 permissions:
-  ultimateshop.dialogpack:
+  ueliteshop.dialogpack:
     default: op
-  ultimateshop.generateitemformat:
+  ueliteshop.generateitemformat:
     default: op
-  ultimateshop.editor:
+  ueliteshop.editor:
     default: op
-  ultimateshop.givesellstick:
+  ueliteshop.givesellstick:
     default: op
-  ultimateshop.menu:
+  ueliteshop.menu:
     default: true
-  ultimateshop.quickbuy:
+  ueliteshop.quickbuy:
     default: op
-  ultimateshop.quicksell:
+  ueliteshop.quicksell:
     default: op
-  ultimateshop.reload:
+  ueliteshop.reload:
     default: op
-  ultimateshop.saveitem:
+  ueliteshop.saveitem:
     default: op
-  ultimateshop.sellall:
+  ueliteshop.sellall:
     default: true
-  ultimateshop.searchgui:
+  ueliteshop.searchgui:
     default: op
-  ultimateshop.sellhand:
+  ueliteshop.sellhand:
     default: true
-  ultimateshop.setbuytimes:
+  ueliteshop.setbuytimes:
     default: op
-  ultimateshop.setselltimes:
+  ueliteshop.setselltimes:
     default: op
-  ultimateshop.bypassprice:
+  ueliteshop.bypassprice:
     default: false

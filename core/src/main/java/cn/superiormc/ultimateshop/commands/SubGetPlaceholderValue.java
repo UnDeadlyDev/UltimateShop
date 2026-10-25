@@ -14,7 +14,7 @@ public class SubGetPlaceholderValue extends AbstractCommand {
 
     public SubGetPlaceholderValue() {
         this.id = "getplaceholdervalue";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = true;
         this.premiumOnly = true;
         this.requiredArgLength = new Integer[]{2};

@@ -18,7 +18,7 @@ public class SubSetBuyTimes extends AbstractCommand {
 
     public SubSetBuyTimes() {
         this.id = "setbuytimes";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.requiredArgLength = new Integer[]{4, 5};
     }

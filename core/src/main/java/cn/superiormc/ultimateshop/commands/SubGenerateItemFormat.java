@@ -19,7 +19,7 @@ public class SubGenerateItemFormat extends AbstractCommand {
 
     public SubGenerateItemFormat() {
         this.id = "generateitemformat";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = true;
         this.requiredArgLength = new Integer[]{1};
     }

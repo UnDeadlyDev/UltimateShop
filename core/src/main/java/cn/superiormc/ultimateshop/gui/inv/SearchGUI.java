@@ -4,7 +4,6 @@ import cn.superiormc.ultimateshop.UltimateShop;
 import cn.superiormc.ultimateshop.api.ShopHelper;
 import cn.superiormc.ultimateshop.gui.InvGUI;
 import cn.superiormc.ultimateshop.gui.Prompt;
-import cn.superiormc.ultimateshop.gui.arc.ArcMenuBridge;
 import cn.superiormc.ultimateshop.gui.dialog.DialogSearchGUI;
 import cn.superiormc.ultimateshop.gui.form.FormSearchGUI;
 import cn.superiormc.ultimateshop.managers.ConfigManager;
@@ -329,9 +328,6 @@ public class SearchGUI extends InvGUI {
     public static void openGUI(Player player, ObjectSearchMenu menu, boolean bypass, boolean reopen) {
         if (UltimateShop.useGeyser && menu.isUseGeyser() && CommonUtil.isBedrockPlayer(player)) {
             new FormSearchGUI(player, menu, bypass).openGUI(reopen);
-            return;
-        }
-        if (ArcMenuBridge.arcMenuBridge.open(player, menu, null, bypass, reopen)) {
             return;
         }
         if (menu.isUseDialog()) {

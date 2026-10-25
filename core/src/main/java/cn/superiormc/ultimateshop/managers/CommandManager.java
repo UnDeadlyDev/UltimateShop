@@ -22,8 +22,8 @@ public class CommandManager extends AbstractManager {
     }
 
     private void registerBukkitCommands(){
-        Objects.requireNonNull(Bukkit.getPluginCommand("ultimateshop")).setExecutor(new MainCommand());
-        Objects.requireNonNull(Bukkit.getPluginCommand("ultimateshop")).setTabCompleter(new MainCommandTab());
+        Objects.requireNonNull(Bukkit.getPluginCommand("ueliteshop")).setExecutor(new MainCommand());
+        Objects.requireNonNull(Bukkit.getPluginCommand("ueliteshop")).setTabCompleter(new MainCommandTab());
     }
 
     private void registerObjectCommand() {

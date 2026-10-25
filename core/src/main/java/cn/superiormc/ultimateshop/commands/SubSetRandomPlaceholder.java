@@ -18,7 +18,7 @@ public class SubSetRandomPlaceholder extends AbstractCommand {
 
     public SubSetRandomPlaceholder() {
         this.id = "setrandomplaceholder";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.premiumOnly = true;
         this.requiredArgLength = new Integer[]{2, 3, 4, 5};

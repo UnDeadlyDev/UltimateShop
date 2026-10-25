@@ -17,7 +17,7 @@ public class SubResetRandomPlaceholder extends AbstractCommand {
 
     public SubResetRandomPlaceholder() {
         this.id = "resetrandomplaceholder";
-        this.requiredPermission =  "ultimateshop." + id;
+        this.requiredPermission =  "ueliteshop." + id;
         this.onlyInGame = false;
         this.premiumOnly = true;
         this.requiredArgLength = new Integer[]{2, 3};
